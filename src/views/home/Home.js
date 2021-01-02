@@ -5,7 +5,9 @@ import './App.css'
 function Home() {
     return (
         <div className="App">
-            <header className="App-header">
+
+            <h1>asd</h1>
+            {/* <header className="App-header">
                 <img src={Logo} className="App-logo" alt="logo" />
                 <p>
                     Edit <code>src/App.js</code> and save to reload.
@@ -21,7 +23,7 @@ function Home() {
                 >
                     Mi Linkedin!
         </a>
-            </header>
+            </header> */}
         </div>
     )
 }
