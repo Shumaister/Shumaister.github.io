@@ -3,7 +3,7 @@ import { HashRouter as Router, Switch, Route } from 'react-router-dom'
 import logo from './profilePic.png';
 // import './App.css';
 
-import Appbar from './components/Appbar'
+import MenuAppbar from './components/MenuAppbar'
 import MainRoute from './components/MainRoute'
 
 // const home = <div className="App">
@@ -27,12 +27,8 @@ import MainRoute from './components/MainRoute'
 function App() {
   return (
     <Router>
-       <div style={{ 'display': 'flex', 'height': '100vh' }}>
-
-      <h1> ALGO DIBUJOOO</h1>
-        <Appbar></Appbar>
+        <MenuAppbar></MenuAppbar>
         <MainRoute></MainRoute>
-      </div>
     </Router>
   )
 }
