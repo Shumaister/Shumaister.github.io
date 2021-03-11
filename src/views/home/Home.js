@@ -14,7 +14,7 @@ const useStyles = makeStyles(theme => ({
         marginTop: theme.spacing(4),
         fontFamily: "Consolas,Monaco,'Andale Mono','Ubuntu Mono',monospace",
         color: 'white'
-    }, 
+    },
 }));
 
 function Home() {
@@ -26,7 +26,7 @@ function Home() {
 
                 <Typography className={classes.title} align="center" variant="h2" marked="center">
                     Hola, <b>ya llegaste!</b> Soy Gabriel Maiori
-            </Typography>
+                </Typography>
 
                 <Typography className={classes.dinamictitle} align="center" variant="h5" marked="center">
                     Aqui te vas a encontrar a alguien
