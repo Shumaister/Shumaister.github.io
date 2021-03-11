@@ -1,29 +1,47 @@
 import React from 'react'
-import Logo from './profilePic.png'
-import './App.css'
+import { makeStyles } from '@material-ui/core/styles'
+import BackgroudContainer from './BackgroudContainer'
+import Typography from '@material-ui/core/Typography'
+import ReactRotatingText from "react-rotating-text"
+
+const useStyles = makeStyles(theme => ({
+    title: {
+        marginTop: theme.spacing(15),
+        marginBottom: theme.spacing(4),
+        color: 'white'
+    },
+    dinamictitle: {
+        marginTop: theme.spacing(4),
+        fontFamily: "Consolas,Monaco,'Andale Mono','Ubuntu Mono',monospace",
+        color: 'white'
+    }, 
+}));
 
 function Home() {
-    return (
-        <div className="App">
+    const classes = useStyles()
 
-            <header className="App-header">
-                <h1>Bienvenidx!</h1>
-                <p>Esta pagina esta en contruccion! Pero te invito a ir a mi linkedin :)</p>
-                <a
-                    className="App-link"
-                    href="https://www.linkedin.com/in/gabriel-maiori-646801170/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >
-                    Mi Linkedin!
-                </a>
+    return (
+        <>
+            <BackgroudContainer>
+
+                <Typography className={classes.title} align="center" variant="h2" marked="center">
+                    Hola, <b>ya llegaste!</b> Soy Gabriel Maiori
+            </Typography>
+
+                <Typography className={classes.dinamictitle} align="center" variant="h5" marked="center">
+                    Aqui te vas a encontrar a alguien
                 <br></br>
-                <br></br>
-                <br></br>
-                <img src={Logo} className="App-logo" alt="logo" />
-            </header>
-        </div>
+                    <br></br>
+                    <ReactRotatingText items={['Humano', 'Programador', 'Profesional', 'Profesor', 'Casi Ingeniero', 'Amiguero y Familiero']} />
+                    <br></br>
+                    <br></br>
+                Te invito a pasar!
+            </Typography>
+            </BackgroudContainer>
+        </>
     )
 }
 
 export default Home
+
+
