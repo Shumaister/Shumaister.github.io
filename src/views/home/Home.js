@@ -6,24 +6,22 @@ function Home() {
     return (
         <div className="App">
 
-            <h1>asd</h1>
-            {/* <header className="App-header">
-                <img src={Logo} className="App-logo" alt="logo" />
-                <p>
-                    Edit <code>src/App.js</code> and save to reload.
-        </p>
-
-                <a style="font-size:20px;font-family:Helvetica,Arial,sans-serif;color:#ffffff;text-decoration:none;color:#ffffff;text-decoration:none;padding:15px 25px;border-radius:2px;border:1px solid #7c72dc;display:inline-block">Acceder</a>
-
+            <header className="App-header">
+                <h1>Bienvenidx!</h1>
+                <p>Esta pagina esta en contruccion! Pero te invito a ir a mi linkedin :)</p>
                 <a
                     className="App-link"
                     href="https://www.linkedin.com/in/gabriel-maiori-646801170/"
                     target="_blank"
                     rel="noopener noreferrer"
-                >
+                    >
                     Mi Linkedin!
-        </a>
-            </header> */}
+                </a>
+                <br></br>
+                <br></br>
+                <br></br>
+                <img src={Logo} className="App-logo" alt="logo" />
+            </header>
         </div>
     )
 }
